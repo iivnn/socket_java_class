@@ -1,4 +1,4 @@
-package socket.exercise.serverside;
+package socket.exercise.socket_java_class.serverside;
 
 import java.io.IOException;
 import java.net.ServerSocket;

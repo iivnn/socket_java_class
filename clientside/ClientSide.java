@@ -1,4 +1,4 @@
-package socket.exercise.clientside;
+package socket.exercise.socket_java_class.clientside;
 
 import java.io.IOException;
 import java.util.Scanner;

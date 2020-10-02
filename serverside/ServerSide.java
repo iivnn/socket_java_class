@@ -1,4 +1,4 @@
-package socket.exercise.serverside;
+package socket.exercise.socket_java_class.serverside;
 
 import java.io.IOException;
 
@@ -16,10 +16,10 @@ public class ServerSide {
     public static void main(String[] args) {
         try {
             server = new Server(3333);
-            while(true){
+            while (true) {
                 Thread thread = new Thread(new Connection(server.listen()));
                 thread.start();
-            }      
+            }
         } catch (IOException ex) {
             System.err.println("erro: " + ex);
         }

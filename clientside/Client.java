@@ -1,4 +1,4 @@
-package socket.exercise.clientside;
+package socket.exercise.socket_java_class.clientside;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -33,15 +33,15 @@ public class Client {
     public String receive() throws IOException {
         return IN.readUTF();
     }
-    
-    public void close() throws IOException{
+
+    public void close() throws IOException {
         OUT.writeUTF(CLOSE);
         OUT.close();
         IN.close();
         SOCKET.close();
     }
-    
-    public boolean isConnected(){
+
+    public boolean isConnected() {
         return !this.SOCKET.isClosed();
     }
 
